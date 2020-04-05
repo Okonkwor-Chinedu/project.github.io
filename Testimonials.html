@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registration</title>
+        <meta name="author" content="Chinedu Frank Okonkwor">
+        <meta name="description" content="Enjoy your best stay with us">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    <body>
+        <a href="index.html"><header>
+            <img src="images/logo.JPG" alt="Temple Inn Logo">
+            <div>
+                <h1>It is all in the basics</h1>
+                <div class="subheading">Your guide to basic computer skills</div>
+            </div>
+            </header></a>
+            <nav>
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="hide mainmenu" id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Programs.html">Programs Available</a></li>
+                    <li><a href="Testimonials.html">Registration</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        <main>
+                <section id="shopCenter">
+                        <h3></h3>
+                        <div id="accordion">
+                                <img src="images/Register.png" alt>
+                            </div>
+                        </section>
+            <h3>Fill out the following information, or call: 435-313-5223 to make a reservation</h3>
+            <center> 
+            <p>This option is for those who want to advance beyond the basics, and learn some of the advanced programs we have. 
+                <br> They are donation based, what ever you donate that is what you will pay for your class. <br>All donations will go towards providing computers to schools in Nigeria. Please, fill out the form and we will see you in class! <a href="https://www.gofundme.com/">Donate!!!</a></p></p>
+            </center>
+            
+            <form action="thanks.html" method="get" enctype="multipart/form-data" name="event" id="userReport">
+                <fieldset>
+                    <legend><span>Contact Information</span></legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@email.com" ></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required ></label>
+                    <label><span>Zip Code:</span><input name="zip" type="number" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>When will you start?</span></legend>
+                    <label><span>Start Date:</span><input name="date" type="date" ></label>
+                    <label><span>End Date:</span><input name="date" type="date" ></label>
+                    <label><span>Location:</span><input type="text" name="stateType" list="states">
+                        <datalist id="states">
+                                <option value="Washington DC"></option>
+                                <option value="Provo"></option>
+                                <option value="idaho Falls"></option>
+                                <option value="Gilbert"></option>
+                        </datalist>
+                    </label>
+                    <label><span>Advanced Classes Available:</span>
+                        <select name="Reservation">
+                            <option value="select" disabled selected>Select Team Type</option>
+                            <option value="single">Java Programming</option>
+                            <option value="double">Python</option>
+                            <option value="quad">Website Design</option>
+                            <option value="reception">Animation</option>
+                        </select></label>
+                    <label><span>Special Accommodations:</span></label>
+                    <label class="container"><span class="answer">Yes</span>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="answer">Maybe</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="answer">No</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Additional Information:</span></legend>
+                    <textarea name="comments" rows="15" cols="35"></textarea>
+                </fieldset>
+
+                <a href="contactus.html"></a><input type="submit" value="Submit" class="submitBtn">
+                <input type="hidden" value="Event Registration" name="subject" >
+                <input name="redirect" type="hidden" value="thanks.html">
+            </form>
+        </main>
+
+        <footer>   
+<p>It is all in the basics<br>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>Phone Number: 435-313-5223</p><p>&copy;It is all in the basics<br><br><span id="currentdate"></span></p>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hambuger.js"></script>
+</body>
+</html>
